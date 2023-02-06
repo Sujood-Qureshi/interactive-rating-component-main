@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.rating-card {
+    width: 19rem;
+    height: 19rem;
+}
+
+/* rating state  */
+.card-style {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(200deg, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    padding: 1.5rem;
+    border-radius: 15px;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.image {
+    background: hsl(213, 19%, 18%);
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 30px;
+}
+
+.content>h1 {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+}
+
+.content>p {
+    font-size: 0.7rem;
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.rating .unactive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: hsl(213, 19%, 18%);
+    color: hsl(216, 12%, 54%);
+    cursor: pointer;
+}
+
+button {
+    background: hsl(25, 97%, 53%);
+    border: none;
+    padding: 0.7rem 0rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Thank you state end  */
+
+.back-card>.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.thankImage {
+    width: 9rem;
+    height: 5rem;
+}
+
+.back-card>.content>#your-rating {
+    background: hsl(213, 19%, 18%);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    text-align: center;
+    color: hsl(25, 97%, 53%);
+}
+
+.back-card>.content>h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.back-card>.content>p {
+    text-align: center;
+}
+
+/* hover effect  */
+.rating .unactive:hover {
+    background: hsl(25, 97%, 53%);
+    color: white;
+}
+
+button:hover {
+    background: white;
+    border: none;
+    padding: 0.7rem 0rem;
+    font-weight: 700;
+    color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+}
+
+/* javascript classed  */
+.hidden {
+    display: none;
+}
+
+.active {
+    background: hsl(216, 12%, 54%) !important;
+    color: white !important;
+}

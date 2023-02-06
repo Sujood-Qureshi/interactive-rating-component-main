@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="rating-card">
+      <!-- Rating state start -->
+      <div class="front-card  card-style">
+        <div class="content">
+          <div class="image">
+            <img src="/images/icon-star.svg" alt="">
+          </div>
+          <h1>How did we do?</h1>
+          <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+            offering!</p>
+          <div class="rating">
+            <div onclick="onRatingOne()" id="one" class="unactive">1</div>
+            <div onclick="onRatingTwo()" id="two" class="unactive">2</div>
+            <div onclick="onRatingThree()" id="three" class="unactive">3</div>
+            <div onclick="onRatingFour()" id="four" class="unactive">4</div>
+            <div onclick="onRatingFive()" id="five" class="unactive">5</div>
+          </div>
+          <button type="submit" onclick="onSubmit()">Submit</button>
+        </div>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="back-card hidden card-style">
+        <div class="content">
+          <img class="thankImage" src="/images/illustration-thank-you.svg" alt="">
+          <p id="your-rating">You selected <span id="future-value">0</span> out of 5</p>
+          <h2>Thank you!</h2>
+          <p> We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!</p>
+        </div>
+      </div>
+      <!-- Thank you state end -->
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Sujood-Qureshi">Sujood Qureshi</a>.
+    </div>
+  </footer>
+</body>
+
+</html>
